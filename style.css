@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+h1 {
+    font-size: px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.game-board {
+    display: inline-block;
+    border: 3px solid rgb(253, 0, 0);
+    background-image: url("https://yt3.googleusercontent.com/QIRm-gmG1Dj4bMvWSOQygxQ-bRs6VIm25qBxv82IpJwuX_TH3B7xz-SJMFZ6yVorSxXQqihX=s900-c-k-c0x00ffffff-no-rj");
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: .6;
+    transition: .8s;
+}
+#restart-btn:hover {
+    background-color: #555555;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, #333);
+
+    
+  }
