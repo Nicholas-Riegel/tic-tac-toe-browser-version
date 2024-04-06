@@ -1,9 +1,11 @@
 const clickTile = document.querySelectorAll(".cell")
-
+const status = document.getElementById('status');
+const restartBtn = document.getElementById('restart-btn');
 const topRow = [1, 2, 3]
 const midRow = [4, 5, 6]
 const bottomRow = [7, 8, 9]
-
+let currentPlayer = 'X';
+let gameActive = true;
 let turn = 0
 
 const clickedSquares = []
@@ -108,3 +110,30 @@ clickTile.forEach(x =>{
       }   
    })  
 })
+
+
+
+
+// restarts game
+
+function restartGame() {
+   // Clear the board
+   clickTile.forEach(tile => {
+       tile.textContent = '';
+   });
+   
+   // Reset game variables
+   clickedSquares.length = 0;
+   topRow.fill(1);
+   midRow.fill(1);
+   bottomRow.fill(1);
+   currentPlayer = 'X';
+   gameActive = true;
+   turn = 0;
+
+   // Reset status message
+   status.textContent = "Player X's turn";
+}
+
+// Event listener for restart button
+restartBtn.addEventListener('click', restartGame);
