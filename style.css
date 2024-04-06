@@ -7,7 +7,6 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 .container {
     text-align: center;
     margin-top: 50px;
@@ -19,7 +18,6 @@ h1 {
     background-image: url("https://yt3.googleusercontent.com/QIRm-gmG1Dj4bMvWSOQygxQ-bRs6VIm25qBxv82IpJwuX_TH3B7xz-SJMFZ6yVorSxXQqihX=s900-c-k-c0x00ffffff-no-rj");
     background-size: cover;  
 }
-
 
 .row {
     display: flex;
@@ -37,12 +35,11 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: .9s;
 }
+
 .cell:hover {
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     color: #000000;
     opacity: .5;
-
-
 }
 
 .status {
