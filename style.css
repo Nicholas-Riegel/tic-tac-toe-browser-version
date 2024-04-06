@@ -36,6 +36,14 @@ h1 {
     align-items: center;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .9s;
+}
+.cell:hover {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    color: #000000;
+    opacity: .5;
+
+
 }
 
 .status {
