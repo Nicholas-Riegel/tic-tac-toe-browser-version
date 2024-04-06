@@ -18,7 +18,9 @@ h1 {
     border: 3px solid rgb(253, 0, 0);
     background-image: url("https://yt3.googleusercontent.com/QIRm-gmG1Dj4bMvWSOQygxQ-bRs6VIm25qBxv82IpJwuX_TH3B7xz-SJMFZ6yVorSxXQqihX=s900-c-k-c0x00ffffff-no-rj");
     background-size: cover;
+   
 }
+
 
 .row {
     display: flex;
@@ -28,11 +30,12 @@ h1 {
     width: 100px;
     height: 100px;
     border: 1px solid rgb(0, 0, 0);
-    font-size: 48px;
+    font-size: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .status {

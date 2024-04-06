@@ -4,11 +4,29 @@ const restartBtn = document.getElementById('restart-btn');
 const topRow = [1, 2, 3]
 const midRow = [4, 5, 6]
 const bottomRow = [7, 8, 9]
-let currentPlayer = 'X';
-let gameActive = true;
 let turn = 0
 
 const clickedSquares = []
+
+
+// randonmly picks the first player!
+function pickFirstPlayer(){
+   turn = Math.floor(Math.random() * 2 )
+   if( turn === 0) {
+   document.querySelector('#status').innerText = `X's turn`
+   } else {
+      document.querySelector('#status').innerText = `O's turn`
+   }
+}
+
+
+pickFirstPlayer()
+
+
+
+
+
+
 
 // This checks the winner
 const checkWinner = () => { 
@@ -81,6 +99,9 @@ clickTile.forEach(x =>{
          if (choice >= 7 && choice <= 9){
                bottomRow[choice - 7] = 'x';
          }
+         if (clickedSquares.length < 9){
+            document.querySelector('#status').innerText = `O's turn`
+         } 
 
          checkWinner()
          
@@ -105,6 +126,9 @@ clickTile.forEach(x =>{
          if (choice >= 7 && choice <= 9){
             bottomRow[choice - 7] = 'o';
          }
+         if (clickedSquares.length < 9){
+            document.querySelector('#status').innerText = `X's turn`
+         } 
 
          checkWinner()
       }   
@@ -118,21 +142,19 @@ clickTile.forEach(x =>{
 
 function restartGame() {
    // Clear the board
-   clickTile.forEach(tile => {
+   clickTile.forEach(tile => { // this goes through each tile and resets it.
        tile.textContent = '';
    });
    
    // Reset game variables
    clickedSquares.length = 0;
    topRow.fill(1);
-   midRow.fill(1);
+   midRow.fill(1); 
    bottomRow.fill(1);
-   currentPlayer = 'X';
-   gameActive = true;
    turn = 0;
 
    // Reset status message
-   status.textContent = "Player X's turn";
+   pickFirstPlayer()
 }
 
 // Event listener for restart button
