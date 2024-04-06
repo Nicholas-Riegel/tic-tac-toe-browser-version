@@ -17,8 +17,7 @@ h1 {
     display: inline-block;
     border: 3px solid rgb(253, 0, 0);
     background-image: url("https://yt3.googleusercontent.com/QIRm-gmG1Dj4bMvWSOQygxQ-bRs6VIm25qBxv82IpJwuX_TH3B7xz-SJMFZ6yVorSxXQqihX=s900-c-k-c0x00ffffff-no-rj");
-    background-size: cover;
-   
+    background-size: cover;  
 }
 
 
@@ -52,12 +51,11 @@ h1 {
     opacity: .6;
     transition: .8s;
 }
+
 #restart-btn:hover {
     background-color: #555555;
     color: rgb(0, 0, 0);
     opacity: 1;
     font-size: 32px;
-    background: -webkit-linear-gradient(#eee, #333);
-
-    
-  }
+    background: -webkit-linear-gradient(#eee, #333);   
+}
